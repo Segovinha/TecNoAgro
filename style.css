@@ -1,0 +1,155 @@
+:root {
+    --cor-de-fundo: #000000;
+    --cor-do-texto: #000000;
+    --cor-do-botao: #5A73E3;
+    --cor-do-botao-hover: #48a377;
+    --cor-do-botao-texto: #FFFFFF;
+    --cor-do-rodape: #FFFFFF;
+    --cor-do-h1: #004AAD;
+    --cor-de-fundo-conteudo: linear-gradient(135deg, #ffde59, #ff914d);
+    --fonte-do-site: 'Open Sans', sans-serif;
+
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-do-texto);
+    font-family: var(--fonte-do-site);
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-do-texto);
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+img {
+    width: 250px;
+    height: auto;
+   
+}
+
+.menu ul, a {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    color: var(--cor-do-botao-texto);
+    text-decoration: none;
+}
+
+button {
+    background-color: var(--cor-do-botao);
+    color: #FFFFFF;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 15px 30px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+button:hover {
+    background-color: var(--cor-do-botao-hover);
+}
+
+h1 {
+    color: var(--cor-do-h1);
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+section {
+    background: var(--cor-de-fundo-conteudo);
+    color: var(--cor-do-texto);
+    padding: 20px;
+    flex: 1;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+li {
+    margin-bottom: 10px; 
+    padding: 5px; 
+}
+
+footer {
+   color: var(--cor-do-rodape);
+  
+    text-align: center;
+    border-top: #FFFFFF 2px solid;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px;
+     font-family: var(--fonte-do-site);
+   font-size: 20px;
+   font-weight: 700;
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    header {
+        background-color: var(--cor-de-fundo);
+        color: var(--cor-do-texto);
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu ul li {
+        margin: 0 20px;
+    }
+
+    img {
+        align-items: left;
+    }
+}
+
+@media  screen and (max-width: 500px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 30px;
+    }
+    
+}
